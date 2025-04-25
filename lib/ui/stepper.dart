@@ -21,7 +21,7 @@ class CustomStepperWidget extends StatelessWidget {
           customContainer(
             color: AppColor.kPrimaryColor,
             icon: Icons.info_outline,
-            iconColor: AppColor.kWhiteColor,
+            iconColor: Colors.white,
           ),
           SizedBox(
             width: totalSteps * 46,
@@ -42,8 +42,7 @@ class CustomStepperWidget extends StatelessWidget {
               ),
             ),
           ),
-          customContainer(
-              color: AppColor.kWhiteColor, icon: Icons.arrow_forward_ios),
+          customContainer(color: Colors.white, icon: Icons.arrow_forward_ios),
         ],
       ),
     );

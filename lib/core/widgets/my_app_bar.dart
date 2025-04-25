@@ -1,4 +1,3 @@
-import 'package:flame_test_app/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -10,7 +9,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: title,
       centerTitle: true,
       elevation: 8,
-      shadowColor: AppColor.kBlackColor,
+      shadowColor: Colors.black,
     );
   }
 

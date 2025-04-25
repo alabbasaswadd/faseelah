@@ -161,7 +161,7 @@ class VoiceAnswerPage extends StatelessWidget {
           child: Text(
             value,
             style: const TextStyle(
-              color: AppColor.kWhiteColor,
+              color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 16,
             ),

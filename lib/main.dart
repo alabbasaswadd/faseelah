@@ -1,6 +1,6 @@
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_test_app/state_manegment/cubit/box_cubit.dart';
-import 'package:flame_test_app/ui/voice.dart';
+import 'package:flame_test_app/ui/dialog_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       create: (context) => BoxCubit(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: VoiceAnswerPage(),
+        home: DialogPage(),
       ),
     );
   }

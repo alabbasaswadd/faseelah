@@ -2,7 +2,12 @@ import 'package:flame_test_app/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class MyAlertDialog extends StatelessWidget {
-  const MyAlertDialog({super.key, required this.onOk, required this.onNo, required this.title, required this.content});
+  const MyAlertDialog(
+      {super.key,
+      required this.onOk,
+      required this.onNo,
+      required this.title,
+      required this.content});
   final Function() onOk;
   final Function() onNo;
   final String title;
@@ -14,13 +19,13 @@ class MyAlertDialog extends StatelessWidget {
         MaterialButton(
           onPressed: onOk,
           color: AppColor.kPrimaryColor,
-          textColor: AppColor.kWhiteColor,
+          textColor: Colors.white,
           child: Text("Yes"),
         ),
         MaterialButton(
           onPressed: onNo,
           color: Colors.red,
-          textColor: AppColor.kWhiteColor,
+          textColor: Colors.white,
           child: Text("No"),
         ),
       ],
