@@ -21,4 +21,5 @@ class AppImage {
   static const String coins = "$base/coins.png";
   static const String excier = "$base/excier.png";
   static const String jewels = "$base/jewels.png";
+  static const String good = "$base/good.png";
 }

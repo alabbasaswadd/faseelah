@@ -1,6 +1,6 @@
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_test_app/state_manegment/cubit/box_cubit.dart';
-import 'package:flame_test_app/ui/dialog_page.dart';
+import 'package:flame_test_app/ui/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -16,14 +16,13 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => BoxCubit(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: DialogPage(),
+        home: BasePage(),
       ),
     );
   }

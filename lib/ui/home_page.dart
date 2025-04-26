@@ -1,5 +1,5 @@
 import 'package:flame_audio/flame_audio.dart';
-import 'package:flame_test_app/ui/awards_page.dart';
+import 'package:flame_test_app/ui/good.dart';
 import 'package:flutter/material.dart';
 
 class BasePage extends StatefulWidget {
@@ -19,10 +19,9 @@ class _BasePageState extends State<BasePage> {
               FlameAudio.play('magic.mp3');
               showGeneralDialog(
                 context: context,
-                barrierColor: Colors.black,
                 transitionDuration: const Duration(milliseconds: 600),
                 pageBuilder: (context, animation, secondaryAnimation) {
-                  return TestPage();
+                  return GoodPage();
                 },
               );
             },
