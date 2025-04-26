@@ -7,7 +7,7 @@ class GoodPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black.withOpacity(0.5), // شفافية الخلفية
+      backgroundColor: Colors.black.withOpacity(0.1), 
       body: Center(
         child: Image.asset(
           AppImage.good,
